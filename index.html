@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="relative w-full">
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="shadow-md fixed top-0 left-0 w-full z-10 transition-colors duration-300 ease-in-out">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-xl font-bold">
+                    <a href="#" class="text-white" id="logo-text">DESIGN HOTELS</a>
+                </div>
+
+                <!-- Middle of Navigation -->
+                <div class="hidden md:flex border text-sm fw-bold   rounded-3xl p-2 items-center bg-white text-center text-black"
+                    id="nav-middle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p class="px-2 cursor-pointer">Search Destination</p>
+                    <span class="text-gray-200 px-1">|</span>
+                    <p class="px-2 cursor-pointer">Check-in-Check-out </p>
+                    <span class="text-gray-200 px-1 bg-yello">|</span>
+                    <p class="px-2 cursor-pointer">Guests</p>
+                    <a href="" class="bg-ashGreen px-3 py-1.5 text-black opacity-0.3 bg-gray-300 rounded-3xl">Search</a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-6 text-white" id="nav-links">
+                    <a href="#" class="hover:text-green-500">Hotels</a>
+                    <a href="#" class="hover:text-green-500">Offers</a>
+                    <a href="#" class="hover:text-green-500">Journal</a>
+                </div>
+
+                <!-- Hamburger Menu Icon (visible on small screens) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Hotels</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Offers</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Journal</a>
+            </div>
+        </nav>
+
+        <!-- Video Background -->
+        <div class="relative m-0 p-0 h-screen overflow-hidden">
+            <video id="myVideo" class="absolute top-0 left-0 w-full h-full object-cover" loop muted playsinline
+                autoplay>
+                <source data-source="large"
+                    data-src="https://player.vimeo.com/progressive_redirect/playback/953620119/rendition/720p/file.mp4?loc=external&log_user=0&signature=6ca66d78675e5da9e7f2b1ad778a63621be27e5ba8b263431083c29a63a3f269"
+                    type="video/mp4"
+                    src="https://player.vimeo.com/progressive_redirect/playback/953620119/rendition/720p/file.mp4?loc=external&log_user=0&signature=6ca66d78675e5da9e7f2b1ad778a63621be27e5ba8b263431083c29a63a3f269">
+            </video>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mx-auto pl-14 z-20 relative">
+        <div class="row">
+            <div class="flex b m-auto">
+                <a class="border border-gray-300 my-2 px-3 py-2 text-center hover:text-ashGreen">
+                    <i class="fa-solid fa-hotel"></i>
+                    <p class="py-2">All Hotels</p>
+                </a>
+                <div class="border border-gray-300 my-2 px-3 py-2 text-center hover:text-red-500">
+                    <i class="fa-solid fa-hotel"></i>
+                    <p class="py-2">New Hotels</p>
+                </div>
+                <!-- Other buttons... -->
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="flex container w-[80%] h-[80vh] m-auto ">
+            <div class="w-[50%] h-[90%]  m-auto ">
+                <img class="w-[100%] h-[100%]  m-auto  " src="hero.webp" alt="">
+                <div class="z-10 pl-20 pt-5 ">
+
+                    <p class="text-white font-semibold text-xl ">New Member Hotels</p>
+                    <h3 class="text-white py-5 font-bold text-5xl">Inhabit Queen’s Gardens</h3>
+                    <p class="text-white ">London, United Kingdom</p>
+                </div>
+            </div>
+            <div class=" h-[90%]  w-[50%] m-auto px-10  back">
+                <div class="flex h-10 mb-14 mt-5">
+
+                    <div class="pr-10 ">
+                        <p>usa</p>
+                        <h5 class="text-xl font-bold hover:border-black hover:border-b-2">Drift Santa Barbara</h5>
+                    </div>
+
+
+                    <div class="pr-10">
+                        <p>mexico</p>
+                        <h5 class="text-xl font-bold hover:border-black hover:border-b-2 ">Boca de Agua</h5>
+                    </div>
+
+                    <div class="pr-10 ">
+                        <p>United kingdom</p>
+                        <h5 class="text-xl font-bold hover:border-black hover:border-b-2">Inhabit Queen’s Gardens
+
+                        </h5>
+                    </div>
+                </div>
+
+                <img class="pb-10 " src="drift-santa-barbara-02.webp" alt="">
+                <div class="flex items-center  ">
+                    <p class="w-[80%] font-bold text-xl">A jungle retreat from a man who sought holistic experiences and
+                        communal connections—and found it in the Yucatan.</p>
+                    <a href="#" class="px-4 text-center  py-2 rounded-3xl bg-gray-200"> View & Book</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-[80%] h-[90%]  m-auto flex">
+        <div class=" w-[100%] ">
+            <img class="absolute" src="picture.webp" alt="">
+            <div class="relative text-white p-14">
+                <h6 class="text-lg font-semibold">Design Hotels picks</h6>
+            <h3 class="text-5xl leading-snug font-bold"> 
+                
+                Parkhotel Mondschein</h3>
+<div class=" mt-[20rem]">
+
+    <h6 class="text-5xl leading-snug  font-semibold"> Bolzano, Italy</h6>
+                <h5 class="text-2xl font-bold">
+                   
+                    The Bolzano of your grandparents is no more! Say hello to international yoga instructors and Michelin-star cuisine.</h5>
+</div>
+            </div>
+        </div>
+        <div class=" relative">
+            <div class="ml-auto h-[100%] flex gap-7">
+                <div class="ml-8">
+                    <div class="mb-10 ">
+                        <img class="mb-auto object-cover" src="picture1.webp" alt="">
+                    </div>
+
+                    <div class=" ">
+                        <img class="mt-auto object-cover" src="pic2.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="w-[50%] h-[100%] font-poppins ">
+                    <div class=" pt-5 h-[50%] ">
+                        <p class="font-bold  text-xs pb-3 font-poppins">Fall for Wellness</p>
+                        <h5 class="text-3xl  font-bold leading-snug font-poppins">Exclusive offers for body and soul
+                        </h5>
+                    </div>
+                    <div class=" pt-5">
+                        <p class="font-bold text-xs pb-3 font-poppins">Offbeat Destinations</p>
+                        <h5 class="text-3xl  font-bold leading-snug font-poppins">
+                            Off the radar and out of this world</h5>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+  <div class="mt-24 bg-red-200">
+<h2>hello</h2>
+  </div>
+
+
+
+
+
+
+
+    <!-- <div class="h-48 bg-green-400">
+
+
+</div> -->
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const navLinks = document.getElementById('nav-links');
+            const logoText = document.getElementById('logo-text');
+            const navMiddle = document.getElementById('nav-middle');
+
+            if (window.scrollY > 40) {  // Change the value to adjust when the color change occurs
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-transparent');
+                navLinks.classList.add('text-black');
+                navLinks.classList.remove('text-white');
+                logoText.classList.add('text-black');
+                logoText.classList.remove('text-white');
+
+            } else {
+                navbar.classList.add('bg-transparent');
+                navbar.classList.remove('bg-white');
+                navLinks.classList.add('text-white');
+                navLinks.classList.remove('text-black');
+                logoText.classList.add('text-white');
+                logoText.classList.remove('text-black');
+
+            }
+        });
+    </script>
+</body>
+
+</html>

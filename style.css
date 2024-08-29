@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('/assets/fonts/YourCustomFont.woff2') format('woff2'),
+         url('/assets/fonts/YourCustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.height{
+    height: calc(100% - 200px);
+}
+
+@font-face {
+    font-family: 'Suisse Medium';
+    src: url('/path/to/fonts/Suisse-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.border{
+    opacity: 1;
+    color: #000;
+    min-width: 120px;
+
+}
+
+
+
+/* Ensure the video fills the screen */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Navbar settings */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Make navbar semi-transparent */
+}
+.back{
+    background-color: #F7F7F4;
+}
